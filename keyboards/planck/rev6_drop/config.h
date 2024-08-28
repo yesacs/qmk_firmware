@@ -30,15 +30,15 @@
  */
 
 /* disable debug print */
-//#define NO_DEBUG
+// #define NO_DEBUG
 
 /* disable print */
-//#define NO_PRINT
+// #define NO_PRINT
 
 /* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
+// #define NO_ACTION_LAYER
+// #define NO_ACTION_TAPPING
+// #define NO_ACTION_ONESHOT
 
 /*
  * WS2812 Underglow Matrix options
@@ -48,3 +48,5 @@
 #define WS2812_PWM_PAL_MODE 1
 #define WS2812_PWM_DMA_STREAM STM32_DMA1_STREAM2
 #define WS2812_PWM_DMA_CHANNEL 2
+
+#define ENCODER_RESOLUTION 2 // or 4

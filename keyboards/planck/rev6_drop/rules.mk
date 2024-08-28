@@ -1,2 +1,6 @@
 CUSTOM_MATRIX = lite
 SRC += matrix.c
+
+ENCODER_ENABLE = yes
+COMBO_ENABLE = yes
+INTROSPECTION_KEYMAP_C = Combos.c

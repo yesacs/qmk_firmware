@@ -42,7 +42,7 @@
 // #define MODS_TO_NEUTRALIZE { MOD_BIT(KC_LEFT_ALT), MOD_BIT(KC_LEFT_GUI), MOD_BIT(KC_RIGHT_GUI), MOD_BIT(KC_LEFT_CTRL)|MOD_BIT(KC_LEFT_SHIFT) }
 
 // Configure the global tapping term (default: 200ms)
-#define TAPPING_TERM 50
+#define TAPPING_TERM 120
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 // #define QUICK_TAP_TERM 0
@@ -50,6 +50,7 @@
 // #define RETRO_SHIFT 500
 // #define PERMISSIVE_HOLD
 // #define AUTO_SHIFT_REPEAT
+//
 
 #define COMBO_TERM 25        // how quickly all combo keys must be pressed in succession to trigger
 #define COMBO_MUST_HOLD_MODS // if a combo triggers a modifier, only trigger when the combo is held

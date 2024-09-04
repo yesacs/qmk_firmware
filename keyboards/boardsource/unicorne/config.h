@@ -42,7 +42,7 @@
 // #define MODS_TO_NEUTRALIZE { MOD_BIT(KC_LEFT_ALT), MOD_BIT(KC_LEFT_GUI), MOD_BIT(KC_RIGHT_GUI), MOD_BIT(KC_LEFT_CTRL)|MOD_BIT(KC_LEFT_SHIFT) }
 
 // Configure the global tapping term (default: 200ms)
-#define TAPPING_TERM 150
+#define TAPPING_TERM 50
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 // #define QUICK_TAP_TERM 0

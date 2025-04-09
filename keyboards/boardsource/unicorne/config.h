@@ -22,17 +22,18 @@
 // #define ANALOG_JOYSTICK_Y_AXIS_PIN GP26
 // #define ANALOG_JOYSTICK_X_AXIS_PIN GP27
 
-#define ANALOG_JOYSTICK_Y_AXIS_PIN GP27
-#define ANALOG_JOYSTICK_X_AXIS_PIN GP26
-
-#define POINTING_DEVICE_INVERT_Y
+// #define ANALOG_JOYSTICK_Y_AXIS_PIN GP27
+// #define ANALOG_JOYSTICK_X_AXIS_PIN GP26
+//
+// #define POINTING_DEVICE_INVERT_Y
 // #define POINTING_DEVICE_INVERT_X
 
 // #define ANALOG_JOYSTICK_SPEED_REGULATOR 18
-#define ANALOG_JOYSTICK_SPEED_MAX 3
+// #define ANALOG_JOYSTICK_SPEED_MAX 3
 
-#define SPLIT_POINTING_ENABLE
-#define POINTING_DEVICE_RIGHT
+// enable for pointing device
+// #define SPLIT_POINTING_ENABLE
+// #define POINTING_DEVICE_RIGHT
 
 // #define DUMMY_MOD_NEUTRALIZER_KEYCODE KC_RIGHT_CTRL
 
@@ -50,7 +51,6 @@
 // #define RETRO_SHIFT 500
 // #define PERMISSIVE_HOLD
 // #define AUTO_SHIFT_REPEAT
-//
 
 #define COMBO_TERM 25        // how quickly all combo keys must be pressed in succession to trigger
 #define COMBO_MUST_HOLD_MODS // if a combo triggers a modifier, only trigger when the combo is held

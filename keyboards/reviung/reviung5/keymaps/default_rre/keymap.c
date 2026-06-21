@@ -24,19 +24,20 @@ enum layer_names {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        KC_MUTE,       KC_MPRV,       KC_MPLY,       KC_MNXT,      TG(_LOWER)
+        // KC_MUTE,       KC_MPRV,       KC_MPLY,       KC_MNXT,      TG(_LOWER)
+        LT(_LOWER, KC_SPACE), KC_LGUI, KC_C, KC_V, KC_MPLY
     ),
     [_LOWER] = LAYOUT(
-        UG_TOGG,       LCTL(KC_X),    LCTL(KC_C),    LCTL(KC_V),    _______
+        UG_TOGG,       LCTL(KC_X),    LCTL(KC_C),    LCTL(KC_V),    KC_MPLY
     )
 };
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
         if (IS_LAYER_ON(_LOWER)) {
-          tap_code16((clockwise == true) ? KC_WH_D : KC_WH_U);
+          tap_code((clockwise == true) ? KC_VOLU : KC_VOLD);
         } else {
-          tap_code((clockwise == true) ? KC_VOLD : KC_VOLU);
+          tap_code((clockwise == true) ? KC_WH_U : KC_WH_D);
         }
     }
     return true;

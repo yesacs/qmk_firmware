@@ -1,5 +1,5 @@
 /* Copyright 2021 gtips
- *
+
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
@@ -23,12 +23,24 @@ enum layer_names {
 
 #define LO_VD LT(_LOWER, KC_VOLD)
 
+// const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+//     /* Base */
+//     [_BASE] = LAYOUT(
+//         LO_VD,         KC_MPRV,       KC_MPLY,       KC_MNXT,       KC_VOLU
+//     ),
+//     [_LOWER] = LAYOUT(
+//         _______,       UG_HUEU,       UG_NEXT,       UG_TOGG,       KC_MUTE
+//     )
+// };
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        LO_VD,         KC_MPRV,       KC_MPLY,       KC_MNXT,       KC_VOLU
+        // KC_MUTE,       KC_MPRV,       KC_MPLY,       KC_MNXT,      TG(_LOWER)
+        LT(_LOWER, KC_SPACE), KC_LGUI, KC_C, KC_V, KC_MPLY
     ),
     [_LOWER] = LAYOUT(
-        _______,       UG_HUEU,       UG_NEXT,       UG_TOGG,       KC_MUTE
+        UG_TOGG,       LCTL(KC_X),    LCTL(KC_C),    LCTL(KC_V),    KC_MPLY
     )
 };
+

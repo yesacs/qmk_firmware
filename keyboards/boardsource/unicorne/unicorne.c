@@ -16,7 +16,7 @@ bool Xoled_task_user(void) {
 
     switch (get_highest_layer(layer_state)) {
         case 0:
-            oled_write_P(PSTR("QWERTY\n"), false);
+            oled_write_P(PSTR("QWERTY!\n"), false);
             break;
         case 1:
             oled_write_P(PSTR("NUMBERS\n"), false);

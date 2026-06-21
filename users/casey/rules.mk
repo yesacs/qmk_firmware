@@ -1,0 +1,4 @@
+COMBO_ENABLE = yes
+INTROSPECTION_KEYMAP_C = Combos.c
+
+SRC += <name>.c
